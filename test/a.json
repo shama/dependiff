@@ -1,0 +1,8 @@
+{
+  "name": "testa",
+  "dependencies": {
+    "one": "~0.1.0",
+    "two": "~0.2.0",
+    "three": "~0.0.3"
+  }
+}

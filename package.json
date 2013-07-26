@@ -1,0 +1,46 @@
+{
+  "name": "dependiff",
+  "description": "Compare diffs of dependencies between meta files.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/shama/dependiff",
+  "author": {
+    "name": "Kyle Robinson Young",
+    "email": "kyle@dontkry.com",
+    "url": "http://dontkry.com"
+  },
+  "bin": {
+    "dependiff": "bin/dependiff"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/shama/dependiff.git"
+  },
+  "bugs": {
+    "url": "https://github.com/shama/dependiff/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shama/dependiff/blob/master/LICENSE-MIT"
+    }
+  ],
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "dependencies": {
+    "json-diff": "~0.3.1",
+    "request": "~2.25.0",
+    "nopt": "~2.1.2"
+  },
+  "devDependencies": {
+    "tape": "~1.0.4"
+  },
+  "keywords": [
+    "diff",
+    "dependencies",
+    "compare"
+  ]
+}

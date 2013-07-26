@@ -1,0 +1,12 @@
+{
+  "name": "testb",
+  "dependencies": {
+    "one": "~0.2.0",
+    "three": "~0.0.3",
+    "two": "~0.2.0",
+    "new": "0.0.0"
+  },
+  "devDependencies": {
+    "tape": "~0.1.0"
+  }
+}

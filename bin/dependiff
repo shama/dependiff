@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+var nopt = require('nopt')
+var parsed = nopt({
+  metafile: [String],
+  keys: [String, Array],
+  type: [String],
+}, {
+  m: ['--metafile'],
+  k: ['--keys'],
+  t: ['--type'],
+}, process.argv, 2)
+
+var a = parsed.argv.remain[0]
+var b = parsed.argv.remain[1]
+
+if (!parsed.type) parsed.type = 'diffString'
+
+require('../')(a, b, parsed, function(err, diff) {
+  if (err) console.error(err.stack)
+  else console.log(diff)
+})
