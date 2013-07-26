@@ -43,7 +43,9 @@ $ dependiff http://example.com/package.json http://example2.com/component.json
 
 ## api usage
 
-#### `var dependiff = require('dependiff')(fileA, fileB, [options,] callback)`
+`var dependiff = require('dependiff')`
+
+#### `dependiff(fileA, fileB, [options,] callback)`
 
 - `fileA` and `fileB` are either filepaths or urls to meta files to compare.
 - `options`
